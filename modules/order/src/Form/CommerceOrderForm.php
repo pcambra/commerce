@@ -3,6 +3,7 @@
  * @file
  * Definition of Drupal\commerce_order\Form\CommerceOrderForm.
  */
+
 namespace Drupal\commerce_order\Form;
 
 use Drupal\Core\Entity\ContentEntityForm;
