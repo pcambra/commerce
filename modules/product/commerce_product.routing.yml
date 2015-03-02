@@ -47,22 +47,18 @@ entity.commerce_product.collection:
     _permission: 'administer products'
 
 entity.commerce_product.edit_form:
-  path: '/product/{commerce_product}/edit'
+  path: '/admin/commerce/products/{commerce_product}/edit'
   defaults:
     _entity_form: commerce_product.edit
     _title_callback: '\Drupal\commerce_product\Controller\ProductController::editPageTitle'
-  options:
-    _admin_route: TRUE
   requirements:
     _entity_access: 'commerce_product.edit'
 
 entity.commerce_product.delete_form:
-  path: '/product/{commerce_product}/delete'
+  path: '/admin/commerce/products/{commerce_product}/delete'
   defaults:
     _entity_form: commerce_product.delete
     _title: 'Delete a product'
-  options:
-    _admin_route: TRUE
   requirements:
     _entity_access: 'commerce_product.delete'
 
